@@ -15,7 +15,7 @@ namespace ZiggyBot
 
         try
         {
-            TgBot::TgWebhookTcpServer webhookServer(8081, bot);
+            TgBot::TgWebhookTcpServer webhookServer(88, bot);
             bot.getApi().setWebhook(Config::WEBHOOKURL);
             webhookServer.start();
         }
