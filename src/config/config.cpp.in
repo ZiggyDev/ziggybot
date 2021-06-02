@@ -1,0 +1,7 @@
+#include "config/config.h"
+
+namespace ZiggyBot
+{
+    const std::string Config::TOKEN = "${ZIGGYBOT_TOKEN}";
+    const std::string Config::WEBHOOKURL = "${ZIGGYBOT_WEBHOOK}";
+}
