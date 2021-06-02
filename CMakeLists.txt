@@ -16,6 +16,8 @@ if(CURL_FOUND)
     add_definitions(-DHAVE_CURL)
 endif()
 
+set(ZIGGYBOT_TOKEN ENV{ZIGGYBOT_TOKEN})
+set(ZIGGYBOT_WEBHOOK ENV{ZIGGYBOT_TOKEN})
 configure_file(${CMAKE_SOURCE_DIR}/src/config/Config.cpp.in ${CMAKE_SOURCE_DIR}/src/config/Config.cpp)
 
 file(GLOB_RECURSE ZiggyBot_SRC CONFIGURE_DEPENDS
