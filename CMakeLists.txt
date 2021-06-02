@@ -16,7 +16,7 @@ if(CURL_FOUND)
     add_definitions(-DHAVE_CURL)
 endif()
 
-configure_file(${CMAKE_SOURCE_DIR}/src/config/config.cpp.in ${CMAKE_SOURCE_DIR}/src/config/config.cpp)
+configure_file(${CMAKE_SOURCE_DIR}/src/config/Config.cpp.in ${CMAKE_SOURCE_DIR}/src/config/Config.cpp)
 
 file(GLOB_RECURSE ZiggyBot_SRC CONFIGURE_DEPENDS
     ${CMAKE_SOURCE_DIR}/include/*.h
